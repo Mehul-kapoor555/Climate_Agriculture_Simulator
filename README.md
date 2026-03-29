@@ -43,11 +43,25 @@ This design ensures low coupling, high cohesion, and scalability.
 
 ## OOP Design Principles
 
-* **Encapsulation** – Each module manages its own data and exposes controlled interfaces
-* **Inheritance & Abstraction** – Base classes (e.g., `EnergySource`, `Crop`) define shared behavior
-* **Composition** – Systems are built using "has-a" relationships rather than deep inheritance
-* **Polymorphism** – Interfaces allow flexible and dynamic interaction between components
-* **Exception Handling** – Custom exceptions ensure stable simulation under failure conditions
+The system is designed using core object-oriented principles applied in a practical, system-level context:
+
+- **Encapsulation & Information Hiding**  
+  Each subsystem (Energy, Water, Crop, Environment) manages its internal state independently and exposes only necessary interfaces.
+
+- **Inheritance & Abstraction**  
+  Abstract classes such as `EnergySource` and `Crop` define common behavior, while specialized subclasses implement specific functionality.
+
+- **Composition (Primary Design Pattern)**  
+  The system heavily relies on composition (e.g., `EnergyManager` contains `Battery` and multiple `EnergySource` objects), enabling flexibility and modularity.
+
+- **Polymorphism**  
+  Interfaces and base classes allow components to interact generically while supporting multiple implementations at runtime.
+
+- **Exception Handling**  
+  Custom exceptions (e.g., energy or water shortages) ensure robust handling of failure scenarios without breaking system flow.
+
+- **Extensibility (Open–Closed Principle)**  
+  New components (energy sources, crops, devices) can be added without modifying existing code, making the system scalable.
 
 ---
 
