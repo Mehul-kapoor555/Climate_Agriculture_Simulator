@@ -10,7 +10,7 @@ public class Tomato extends Crop implements Growable {
     @Override
     public void grow(EnvironmentView view) {
         double temp = view.getTemperature();
-        double soil = view.getSoilMoisture(); // <-- changed from humidity to soil moisture
+        double soil = view.getSoilMoisture();
 
         // Temperature effects (simple)
         if (temp >= 20.0 && temp <= 30.0) {
