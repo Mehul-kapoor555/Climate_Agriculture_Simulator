@@ -131,13 +131,18 @@ Each subsystem is implemented as an independent module and interacts through int
 
 ### Option 1: Using Terminal (Recommended)
 
-Compile all Java files:
+Compile all Java files
+1. Using WindowsPowerShell
+```powershell
+javac -d out (Get-ChildItem -Recurse -Filter *.java | % FullName)
+```
 
+2. Using Linux and macOS
 ```bash
 javac -d out $(find src -name "*.java")
 ```
-Run the simulator:
 
+Run the simulator(same command for all systems):
 ```bash
 java -cp out agriculture_simulator.sim.Simulator
 ```
