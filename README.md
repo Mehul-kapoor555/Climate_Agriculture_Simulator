@@ -90,8 +90,8 @@ The project applies object-oriented principles in a system-level context:
 Environment [Temperature: 27.51°C, Soil Moisture: 34.63%]
 
 [EnergyManager] Harvesting energy from all sources...
-                SolarPanel generated: 7.00 kWh (stored: 7.00 kWh)
-                WindTurbine generated: 44.10 kWh (stored: 44.10 kWh)
+                SolarPanel generated: 7.00 kWh 
+                WindTurbine generated: 44.10 kWh
 
 [Battery] Now charged to 51.10 / 110.00 kWh
 [EnergyManager] Total harvested today: 51.10 kWh
@@ -101,7 +101,6 @@ Environment [Temperature: 27.51°C, Soil Moisture: 34.63%]
 
 [Cooler] Temperature -8.32 (used 5.82 kWh)
 [Irrigation] Soil moisture +50.21 (used 31.15 L water, 1.56 kWh)
-
 
 [Battery] Available: 43.72 / 110.00 kWh
 [WaterTank] Available: 45.85 / 220.00 L
