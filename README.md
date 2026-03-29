@@ -81,7 +81,7 @@ The project applies object-oriented principles in a system-level context:
 
 ---
 
-## Example Simulation Output
+## Example Simulation Output (Single Day)
 
 ```text
 ==== Greenhouse: GH-3 ====
