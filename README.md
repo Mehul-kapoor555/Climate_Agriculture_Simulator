@@ -127,20 +127,29 @@ Each subsystem is implemented as an independent module and interacts through int
 
 ---
 
-## How to Compile
+## How to Compile and Run
+
+### Option 1: Using Terminal (Recommended)
+
+Compile all Java files:
 
 ```bash
-javac src/*.java
+javac -d out $(find src -name "*.java")
+```
+Run the simulator:
+
+```bash
+java -cp out agriculture_simulator.sim.Simulator
 ```
 
 ---
+### Option 2: Using IDE (VS Code / IntelliJ)
 
-## How to Run
+- Open the project in an IDE with Java support
+- Navigate to Simulator.java
+- Click Run
 
-```bash
-java -cp src Main
-```
-
+The IDE will automatically handle compilation and execution.
 ---
 
 ## Key Highlights
