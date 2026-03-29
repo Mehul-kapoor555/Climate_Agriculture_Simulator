@@ -84,22 +84,32 @@ The project applies object-oriented principles in a system-level context:
 ## Example Simulation Output
 
 ```text
-==== Greenhouse: GH-1 ====
+==== Greenhouse: GH-3 ====
 
-------- Day 1 -------
-Environment [Temperature: 26.81°C, Soil Moisture: 34.99%]
+            ------- Day 1 -------
+Environment [Temperature: 27.51°C, Soil Moisture: 34.63%]
 
-[EnergyManager] Harvesting energy...
-[Battery] Charged to 63.50 kWh
+[EnergyManager] Harvesting energy from all sources...
+                SolarPanel generated: 7.00 kWh (stored: 7.00 kWh)
+                WindTurbine generated: 44.10 kWh (stored: 44.10 kWh)
 
-[WaterManager] Purchased water from grid
-[WaterTank] Available: 70.00 L
+[Battery] Now charged to 51.10 / 110.00 kWh
+[EnergyManager] Total harvested today: 51.10 kWh
 
-[Cooler] Adjusted temperature
-[Irrigation] Increased soil moisture
+[WaterManager] Not enough energy (92.40 kWh needed). Purchased 77.00 L of water from grid for 154.00 Euros.
+[Water Tank] Tank at 77.00 / 220.00 L.
 
-[Growables]:
-Tomato | Health: 72.0% | Moisture: 59.0% | Stage: 1.0
+[Cooler] Temperature -8.32 (used 5.82 kWh)
+[Irrigation] Soil moisture +50.21 (used 31.15 L water, 1.56 kWh)
+
+
+[Battery] Available: 43.72 / 110.00 kWh
+[WaterTank] Available: 45.85 / 220.00 L
+
+[Growables] :
+Tomato | Health: 70.5% | Moisture: 59.0% | Stage: 0.7
+SoyBean | Health: 72.0% | Moisture: 59.0% | Stage: 1.0
+
 ```
 
 ---
