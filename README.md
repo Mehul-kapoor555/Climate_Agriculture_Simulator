@@ -142,7 +142,7 @@ javac -d out (Get-ChildItem -Recurse -Filter *.java | % FullName)
 javac -d out $(find src -name "*.java")
 ```
 
-Run the simulator(same command for all systems):
+Run the simulator (same command for all systems):
 ```bash
 java -cp out agriculture_simulator.sim.Simulator
 ```
