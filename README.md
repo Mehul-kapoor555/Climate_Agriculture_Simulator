@@ -151,7 +151,7 @@ java -cp out agriculture_simulator.sim.Simulator
 ### Option 2: Using IDE (VS Code / IntelliJ)
 
 - Open the project in an IDE with Java support
-- Navigate to `Simulator.java`
+- Navigate to `sim/Simulator.java`
 - Click Run
 
 The IDE will automatically handle compilation and execution.
